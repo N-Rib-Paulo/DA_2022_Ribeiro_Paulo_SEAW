@@ -15,7 +15,9 @@ Website aufstarten und benutzen:
   - Express-session
   - Mongoose
   - Nodemon (kann auch als Dev-Dependencie installiert werden)
+
 (npm install express bcryptjs cookie-parser express-session mongoose nodemon // npm install --save-dev nodemon)
+
 6. Im Terminal: "npm start"
 7. Die Website im Browser durch den Link: http://localhost:4000 abrufen.
 8. Have fun!
