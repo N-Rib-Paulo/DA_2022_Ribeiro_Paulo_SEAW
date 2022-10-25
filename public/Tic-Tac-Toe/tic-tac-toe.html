@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe Spiel</title>
+
+    <link rel="stylesheet" href="ttt-style.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+
+    <script defer src="ttt-options.js"></script>
+    <script defer src="ttt-game.js"></script>
+    <script defer src="../js/javascript.js"></script>
+    <!-- public folder is set in node.js, therefore not needed in the href -->
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              src="../assets/imgs/gaming_logo.png"
+              alt="Gaming logo von einem Gespenst mit roten Augen."
+            />
+          </a>
+        </div>
+        <div class="brand-title">Website Spieleentwicklung</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="../registration.html">Anmelden</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="outside-div">
+        <section class="section-top">
+          <div class="top">
+            <h1>Tic-Tac-Toe Spiel</h1>
+            <h2>Was ist Tic-Tac-Toe?</h2>
+            <p>
+              Tic-Tac-Toe oder Drei gewinnt (auch Kreis und Kreuz, Dodelschach)
+              ist ein klassisches, einfaches Zweipersonen-Strategiespiel, dessen
+              Geschichte sich bis ins 12. Jahrhundert v. Chr. zurückverfolgen
+              lässt.
+              <br />
+              <br />
+              Auf einem quadratischen, 3×3 Felder großen Spielfeld setzen die
+              beiden Spieler abwechselnd ihr Zeichen (ein Spieler Kreuze, der
+              andere Kreise) in ein freies Feld. Der Spieler, der als Erster
+              drei Zeichen in eine Zeile, Spalte oder Diagonale setzen kann,
+              gewinnt. Wenn allerdings beide Spieler optimal spielen, kann
+              keiner gewinnen, und es kommt zu einem Unentschieden. Das heißt,
+              alle neun Felder sind gefüllt, ohne dass ein Spieler die
+              erforderlichen Zeichen in einer Reihe, Spalte oder Diagonalen
+              setzen konnte.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="container">
+      <canvas id="cvs" width="450" height="450"></canvas>
+      <div class="options">
+        <h1>Tic Tac Toe</h1>
+        <h2>Play Versus</h2>
+        <div class="computer">COMPUTER</div>
+        <div class="friend">FRIEND</div>
+        <h2>Symbol</h2>
+        <div class="x">X</div>
+        <div class="o">O</div>
+        <div class="play">Play</div>
+      </div>
+      <div class="gameover hide"></div>
+    </div>
+
+    <main class="main">
+      <div class="outside-div">
+        <section class="section-top">
+          <div class="top">
+            <h1>Tic-Tac-Toe Spielanleitung</h1>
+            <p>
+              Beim Tic-Tac-Toe Spiel gibt es zwei verschiedene Modi, gegen den
+              Computer oder gegen einen Freund/in.
+              <br />
+              Um zu starten, wähle einen Gegner: COMPUTER oder FRIEND.
+              Anschliessend welches Symbol der erste Spieler verwendet. Danach
+              ganz einfach "Play" drücken. Sollte bei der Auswahl etwas
+              vergessen worden sein, wird diese rot markiert.
+              <br />
+              <br />
+              Drücke mit der Linke Maustaste auf eins der neun Spielfelder um
+              dein Symbol zu platzieren. Falls du mit ein/e Freund/in spielst,
+              wechsle bei jedem Zug ab.
+              <br />
+              <br />
+              Es gibt verschiedene Wege, um das Spiel zu gewinnen:
+              <br />
+              <img
+                src="../Tic-Tac-Toe/img/Win_1.png"
+                alt="In einer Reihe gewinnen"
+              />
+              <img src="../Tic-Tac-Toe/img/Win_2.png" alt="Diagonal gewinnen" />
+              <img
+                src="../Tic-Tac-Toe/img/Win_3.png"
+                alt="Waagerecht gewinnen"
+              />
+              <br />
+              Du kannst mit deinen Symbolen das Spiel in einer Reihe, diagonal
+              oder waagerecht gewinnen.
+              <br />
+              <br />
+              Viel Spass beim spielen!
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <section class="section-footer">
+      <footer class="footer">
+        <div class="footer-main">
+          <ul class="footer-info">
+            <span class="footer-contact-me-text">Kontaktiere mich</span>
+            <li>
+              <a href="mailto:n.rib.paulo@gmail.com">n.rib.paulo@gmail.com</a>
+            </li>
+            <br />
+            <li>
+              <span class="footer-info-span-bottom"
+                ><a href="">Kontaktformular</a></span
+              >
+            </li>
+          </ul>
+          <div class="footer-copyright">
+            <span>&copy; Website Spieleentwicklung, Paulo Ribeiro 2022</span>
+          </div>
+          <div class="footer-privacy">
+            <span><a href="../datenschutz.html">Datenschutz</a></span>
+          </div>
+          <div class="footer-imprint">
+            <span><a href="../impressum.html">Impressum</a></span>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
