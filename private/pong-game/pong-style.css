@@ -1,0 +1,14 @@
+#pong {
+    border: 2px solid #fff;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 75px;
+  }
+  .top h2 {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+
+  

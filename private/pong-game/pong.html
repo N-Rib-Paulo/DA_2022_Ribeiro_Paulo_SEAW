@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pong Spieleentwicklung</title>
+
+    <link rel="stylesheet" href="/private/pong-game/pong-style.css" />
+    <link rel="stylesheet" href="/public/css/styles.css" />
+    <link rel="stylesheet" href="/public/css/footer.css" />
+    <!-- public folder is set in node.js, therefore not needed in the href -->
+
+    <script defer src="/private/pong-game/pong-game.js"></script>
+    <script defer src="/public/js/javascript.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/private/member.html">
+            <img
+              src="/public/assets/imgs/gaming_logo.png"
+              alt="Gaming logo von einem Gespenst mit roten Augen."
+            />
+          </a>
+        </div>
+        <div class="brand-title">Website Spieleentwicklung</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="/private/member.html">Home</a></li>
+            <li><a href="/private/views/contact.html">Kontakt</a></li>
+            <li><a href="/public/index.html">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="outside-div">
+        <section class="section-top">
+          <div class="top">
+            <h1>Pong Spiel</h1>
+            <h2>Was ist Pong?</h2>
+            <p>
+              Ralph Baer gilt als „Vater der Videospiele“ und als ein Eckpfeiler
+              der Videospielindustrie. 1966 entwickelte er den Prototyp der
+              ersten Konsole überhaupt, die sogenannte „Brown Box“, welche an
+              jedes handelsübliche Fernsehgerät angeschlossen werden konnte. Das
+              Gerät enthielt unter anderem ein Verfolgungs- und ein Tennisspiel.
+              <br />
+              <br />
+              Im Frühjahr 1972 präsentierte in Burlingame, Kalifornien die Firma
+              Magnavox ihre von Ralph Baer entwickelte Magnavox Odyssey, die
+              erste kommerzielle Spielkonsole. An dieser Präsentation spielte
+              Nolan Bushnell zum ersten Mal dieses Ping-Pong Spiel. Als Bushnell
+              wenig später Atari gründete, beauftragte er seinen noch neuen
+              Angestellten Allan Alcorn, zu Übungszwecken ein Ping-Pong-Spiel zu
+              erstellen. Wie sich herausstellte, machte das Ping-Pong-Spiel so
+              viel Spaß, dass Bushnell sich entschied, es zu veröffentlichen. Da
+              der Begriff Ping Pong bereits geschützt war, einigte man sich
+              darauf, das Spiel ganz einfach Pong zu nennen.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <canvas id="pong" width="600" height="400"></canvas>
+
+    <main class="main">
+      <div class="outside-div">
+        <section class="section-top">
+          <div class="top">
+            <h1>Pong Spielanleitung</h1>
+            <p>
+              Das Spielprinzip von Pong ist simpel und ähnelt dem des
+              Tischtennis: Ein Punkt („Ball“) bewegt sich auf dem Bildschirm hin
+              und her. Jeder der beiden Spieler steuert einen senkrechten Strich
+              („Schläger“), den er mit einem Drehknopf (Paddle) nach oben und
+              unten verschieben kann. Lässt man den „Ball“ am „Schläger“ vorbei,
+              erhält der Gegner einen Punkt.
+              <br />
+              <br />
+              Stelle deinen Mauszeiger in das Spielfeld. Der linke Paddle wird
+              dein Mauszeiger erkennen und folgen. Somit kannst du den Paddle
+              nach oben und unten bewegen. Bei jedem Treffen wird die
+              Geschwindigkeit des Balles schneller.
+              <br />
+              <br />
+              Viel Spass beim spielen!
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <section class="section-footer">
+      <footer class="footer">
+        <div class="footer-main">
+          <ul class="footer-info">
+            <span class="footer-contact-me-text">Kontaktiere mich</span>
+            <li>
+              <a href="mailto:n.rib.paulo@gmail.com">n.rib.paulo@gmail.com</a>
+            </li>
+            <br />
+            <li>
+              <span class="footer-info-span-bottom"
+                ><a href="/private/views/contact.html">Kontaktformular</a></span
+              >
+            </li>
+          </ul>
+          <div class="footer-copyright">
+            <span>&copy; Website Spieleentwicklung, Paulo Ribeiro 2022</span>
+          </div>
+          <div class="footer-privacy">
+            <span
+              ><a href="/private/views/datenschutz.html">Datenschutz</a></span
+            >
+          </div>
+          <div class="footer-imprint">
+            <span><a href="/private/views/impressum.html">Impressum</a></span>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
