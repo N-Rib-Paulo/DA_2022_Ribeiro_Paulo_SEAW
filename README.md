@@ -9,7 +9,7 @@ Website aufstarten und benutzen:
 2. Visual Studio Code oder einen beliebigen Editor herunterladen (VSCode: https://code.visualstudio.com)
 3. Node JS auf dem PC installieren: https://nodejs.org/en/ (Bei der Installation muss "npm package manager" ausgewählt sein)
 4. Im VSCode oder beliebigen Editor im Terminal: "node -v" eingeben, bei erfolgreicher Installation wird die Version von Node JS angezeigt
-5. Im Terminal die folgenden Modules installieren:
+5. Im VSCode Terminal die folgenden Modules installieren:
   - Express
   - Bcryptjs
   - Cookie-parser
