@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors Spiel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="rps-style.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+
+    <script defer src="rps-game.js"></script>
+    <script defer src="../js/javascript.js"></script>
+    <!-- public folder is set in node.js, therefore not needed in the href -->
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              src="../assets/imgs/gaming_logo.png"
+              alt="Gaming logo von einem Gespenst mit roten Augen."
+            />
+          </a>
+        </div>
+        <div class="brand-title">Website Spieleentwicklung</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../contact.html">Kontakt</a></li>
+            <li><a href="../registration.html">Anmelden</a></li>
+            <li><a href="../login.html">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="top-text">
+      <div class="top-text-div">
+        <section class="section-top">
+          <div class="top">
+            <h1>Rock, Paper, Scissors Spiel</h1>
+            <h2>Was ist Rock, Paper, Scissors?</h2>
+            <p>
+              Schere, Stein, Papier (Englisch: Rock, Paper, Scissors) (auch
+              Stein, Schere, Papier; Schnick, Schnack, Schnuck; Fli, Fla, Flu;
+              Pi, Pa, Po; Ching, Chang, Chong; Klick, Klack, Kluck; Stein
+              schleift Schere; Schnibbeln, Knobeln oder Schniekern) ist ein
+              sowohl bei Kindern als auch Erwachsenen beliebtes und weltweit
+              verbreitetes Spiel. Zwei Spieler wählen je eins der drei möglichen
+              Symbole Schere, Stein oder Papier und zeigen dieses dann auf ein
+              Kommando gleichzeitig (schlagartig) mit Hilfe einer ihrer Hände
+              an. Da jedes Symbol gegen ein anderes gewinnen oder verlieren
+              kann, steht immer einer der Spieler als Gewinner fest. Zu
+              Unentschieden kommt es, wenn beide Spieler dasselbe Symbol wählen.
+              Das Spiel wird in diesem Fall wiederholt.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <main class="main">
+      <div class="outside-div">
+        <div class="wrapper">
+          <div class="scoreboard">
+            <div class="title">
+              <img src="../Rock-Paper-Scissors/assets/title.png" alt="" />
+            </div>
+            <div class="score">
+              <p>SCORE</p>
+              <h1>0</h1>
+            </div>
+          </div>
+          <div class="hands">
+            <div class="hand paper">
+              <img
+                src="../Rock-Paper-Scissors/assets/Paper.png"
+                onclick="pickUserHand('paper')"
+                alt=""
+              />
+            </div>
+            <div class="hand scissors">
+              <img
+                src="../Rock-Paper-Scissors/assets/Scissors.png"
+                onclick="pickUserHand('scissors')"
+                alt=""
+              />
+            </div>
+            <div class="hand rock">
+              <img
+                src="../Rock-Paper-Scissors/assets/Rock.png"
+                onclick="pickUserHand('rock')"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="contest">
+            <div class="userhand">
+              <h1>YOU PICKED</h1>
+              <div class="handImageContainer">
+                <img
+                  id="userPickImage"
+                  src="../Rock-Paper-Scissors/assets/Paper.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="referee">
+              <div class="decision"><h1>YOU WIN</h1></div>
+              <div class="newGame" onclick="restartGame()">PLAY AGAIN</div>
+            </div>
+            <div class="computerhand">
+              <h1>COMPUTER PICKED</h1>
+              <div class="handImageContainer">
+                <img
+                  id="computerPickImage"
+                  src="../Rock-Paper-Scissors/assets/Scissors.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <main class="top-text">
+      <div class="top-text-div">
+        <section class="section-top">
+          <div class="top">
+            <h1>Rock, Paper, Scissors Spielanleitung</h1>
+            <p>
+              Das Spiel wird ausschließlich mit den Händen gespielt. Den
+              Handhaltungen werden Symbole zugeordnet, die einander „schlagen“
+              können. Die drei Hauptfiguren sind Schere, Stein und Papier. Das
+              Papier wird durch eine flache Hand mit ungespreizten Fingern
+              dargestellt, das Symbol der Schere ist der gespreizte Zeige- und
+              Mittelfinger, und der Stein wird durch eine Faust symbolisiert.
+              <br />
+              <br />
+              Um zu starten, drücke mit der Linke Maustaste auf eins der Symbole
+              um deine Auswahl zu markieren. Hier hast du nur den Computer als
+              Gegner. Wenn du gewinnst, geht deine Punktzahl ("Score") hoch.
+              <br />
+              Nachdem du deinen Zug gespielt hast, drücke "Play Again" um
+              nochmals zu spielen.
+              <br />
+              <br />
+              Die Wertigkeit der Symbole gegeneinander ergibt sich aus dem
+              jeweils Dargestellten: Die Schere schneidet das Papier (Schere
+              gewinnt), das Papier wickelt den Stein ein (Papier gewinnt), und
+              der Stein macht die Schere stumpf (Stein gewinnt).
+              <br />
+              <img
+                src="../Rock-Paper-Scissors/assets/Win_1.png"
+                alt="Papier gewinnt gegen Stein"
+              />
+              <img
+                src="../Rock-Paper-Scissors/assets/Win_2.png"
+                alt="Schere gewinnt gegen Papier"
+              />
+              <img
+                src="../Rock-Paper-Scissors/assets/Win_3.png"
+                alt="Stein gewinnt gegen Schere"
+              />
+              <br />
+              Entscheiden sich beide Spieler für dasselbe Symbol, wird das Spiel
+              als unentschieden gewertet und wiederholt.
+              <img
+                src="../Rock-Paper-Scissors/assets/Tie.png"
+                alt="Beide Auswahlen dasselbe ergibt es ein Gleichstand"
+              />
+              <br />
+              <br />
+              Viel Spass beim spielen!
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <section class="section-footer">
+      <footer class="footer">
+        <div class="footer-main">
+          <ul class="footer-info">
+            <span class="footer-contact-me-text">Kontaktiere mich</span>
+            <li>
+              <a href="mailto:n.rib.paulo@gmail.com">n.rib.paulo@gmail.com</a>
+            </li>
+            <br />
+            <li>
+              <span class="footer-info-span-bottom"
+                ><a href="../contact.html">Kontaktformular</a></span
+              >
+            </li>
+          </ul>
+          <div class="footer-copyright">
+            <span>&copy; Website Spieleentwicklung, Paulo Ribeiro 2022</span>
+          </div>
+          <div class="footer-privacy">
+            <span><a href="../datenschutz.html">Datenschutz</a></span>
+          </div>
+          <div class="footer-imprint">
+            <span><a href="../impressum.html">Impressum</a></span>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
