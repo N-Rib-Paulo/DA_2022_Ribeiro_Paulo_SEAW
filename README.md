@@ -22,3 +22,8 @@ Website aufstarten und benutzen:
 6. Im Terminal: "npm start" eingeben
 7. Die Website im Browser durch den Link: http://localhost:4000 abrufen
 8. Have fun!
+
+
+
+
+Letzte Änderungen: 25. Oktober 2022
