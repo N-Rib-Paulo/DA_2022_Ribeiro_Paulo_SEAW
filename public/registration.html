@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/reg-style.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/popup.css">
+    <!-- public folder is set in node.js, therefore not needed in the href -->
+    <script async type="text/javascript" src="../app.js"></script>
+    <!-- public folder is set in node.js, therefore not needed in the href -->
+    <script async type="text/javascript" src="./js/javascript.js"></script>
+
+
+    <title>Website Spieleentwicklung</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              src="../assets/imgs/gaming_logo.png"
+              alt="Gaming logo von einem Gespenst mit roten Augen."
+            />
+          </a>
+        </div>
+        <div class="brand-title">Website Spieleentwicklung</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="registration.html">Anmelden</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="outside-div">
+        <section>
+          <div class="top">
+            <div class="outter-form">
+            <form class="reg-form" method="post" action="/registration">
+              <h1>Anmeldung</h1>
+              <div class="form-group">
+              <label><strong>E-MAIL</strong></label>
+              <hr>
+              <Input type="email" placeholder="E-Mail Adresse" class="form-input" name="email" required></Input>
+              </div>
+              <div class="form-group">
+              <label><strong>NUTZERNAME</strong></label>
+              <hr>
+              <Input type="text" placeholder="Nutzername" class="form-input" name="username" required></Input>
+              </div>
+              <div class="form-group">
+              <label><strong>PASSWORT</strong></label>
+              <hr>
+              <Input type="password" placeholder="Passwort" class="form-input" name="password" required></Input>
+              </div>
+              <div class="form-group">
+              <label><strong>PW BESTÄTIGEN</strong></label>
+              <hr>
+              <Input type="password" placeholder="Passwort bestätigen" class="form-input" name="passwordCheck" required></Input>
+              </div>
+              <br>
+              <div class="reg-btn">
+              <button type="submit" class="button" onclick="openPopupReg()"><strong>Anmelden</strong></button>
+              <div class="popup" id="popup">
+                <img src="./assets/imgs/tick.png" alt="">
+                <h2>Anmeldung erfolgreich!</h2>
+                <a href="./index.html"><button type="button">OK</button></a>
+              </div>
+            </div>
+            </form>
+          </div>
+        </section>
+    </main>
+    <section class="section-footer">
+      <footer class="footer">
+        <div class="footer-main">
+          <ul class="footer-info">
+            <span class="footer-contact-me-text">Kontaktiere mich</span>
+            <li>
+              <a href="mailto:n.rib.paulo@gmail.com">n.rib.paulo@gmail.com</a>
+            </li>
+            <br />
+            <li>
+              <span class="footer-info-span-bottom"
+                ><a href="contact.html">Kontaktformular</a></span
+              >
+            </li>
+          </ul>
+          <div class="footer-copyright">
+            <span>&copy; Website Spieleentwicklung, Paulo Ribeiro 2022</span>
+          </div>
+          <div class="footer-privacy">
+            <span><a href="datenschutz.html">Datenschutz</a></span>
+          </div>
+          <div class="footer-imprint">
+            <span><a href="impressum.html">Impressum</a></span>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
+
+
