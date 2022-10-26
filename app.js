@@ -33,7 +33,7 @@ app.listen(port, () => {
 // For the Connection, Registration, Login
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb+srv://Paulo:1paulo1@spieleentwicklung.x3hjdb0.mongodb.net/spieleentwicklung?retryWrites=true&w=majority", { useNewUrlParser: true }, { useUnifiedTopology: true});
+mongoose.connect("", { useNewUrlParser: true }, { useUnifiedTopology: true});
 
 
 
