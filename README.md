@@ -19,9 +19,10 @@ Website aufstarten und benutzen:
 
 (npm install express bcryptjs cookie-parser express-session mongoose nodemon // npm install --save-dev nodemon)
 
-6. Im Terminal: "npm start" eingeben
-7. Die Website im Browser durch den Link: http://localhost:4000 abrufen
-8. Have fun!
+7. In der "app.js"-Datei muss bei "mongoose.connect" den Verbindungsstring der MongoDB hinzugefügt werden.
+8. Im Terminal: "npm start" eingeben
+9. Die Website im Browser durch den Link: http://localhost:4000 abrufen
+10. Have fun!
 
 
 
