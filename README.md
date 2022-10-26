@@ -27,4 +27,4 @@ Website aufstarten und benutzen:
 
 
 
-Letzte Änderungen: 25. Oktober 2022
+Letzte Änderungen: 26. Oktober 2022
